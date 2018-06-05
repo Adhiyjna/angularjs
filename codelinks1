@@ -1,1 +1,14 @@
-http://tpcg.io/5ihm8S
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+  </head>
+  <body ng-app="" ng-init="quantity=2;cost=4;name='prabhat';rank='CEO';array=[1,2,3,4,5];person={name:'arun'} ">
+    <p>{{quantity*cost}}</p>
+    <p>{{name}}</p>
+    //also use ng-bind
+    <p ng-bind="rank"></p>
+    <p>{{array[2]}}</p>
+    <p>{{person.name}}</p>
+  </body>
+</html>
