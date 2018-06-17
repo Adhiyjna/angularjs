@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myapp" ng-controller="myctrl">
+<h1>{{carname}}</h1>
+
+<script>
+
+var app= angular.module("myapp",[]);
+app.controller("myctrl",function($scope){
+$scope.carname="volvo";
+});
+</script>
+
+
+
+</body>
+</html>
+
+//repeating elements
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myapp" ng-controller="myctrl">
+<h1 ng-repeat="x in carname">{{x}}</h1>
+
+<script>
+
+var app= angular.module("myapp",[]);
+app.controller("myctrl",function($scope){
+$scope.carname=["volvo","nano","jumbo"];
+});
+</script>
+
+
+
+</body>
+</html>
