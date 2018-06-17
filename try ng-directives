@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="firstname='prabhat'">
+<input type="text" ng-model="firstname">
+<p>you wrote {{ firstname}}</p>
+
+
+
+</div>
+</body>
+</html>
+//try ng-binding
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div data-ng-app="" data-ng-init="quantity=5;cost=1">
+
+<h1>COST CALCULATOR</h1>
+<input type="text" ng-model="quantity">
+<input type="text" ng-model="cost">
+<p>total in dollar : {{quantity*cost}}</p>
+</body>
+</html>
+
+// try ng-repeat
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div data-ng-app="" data-ng-init="quantity=5;cost=1">
+
+<h1>COST CALCULATOR</h1>
+<input type="text" ng-model="quantity">
+<input type="text" ng-model="cost">
+<p>total in dollar : {{quantity*cost}}</p>
+</body>
+</html>
