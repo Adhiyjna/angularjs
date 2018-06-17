@@ -1,0 +1,46 @@
+//code 1.
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app>
+<p>expression is {{5+5}}</p>
+</div>
+
+</body>
+</html>
+
+// code 2. if ng-app is not present.
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div>
+<p>expression is {{5+5}}</p>
+</div>
+
+</body>
+</html>
+
+// no result is there.
+
+//adding css in Angularjs
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<p>Change the value of the input field:</p>
+
+<div ng-app="" ng-init="mycol='lightblue'">
+<input style="background-color:{{mycol}}"type="submit" ng-model="mycol">
+</div>
+
+
+
+</body>
+</html>
