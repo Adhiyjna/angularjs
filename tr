@@ -1,0 +1,42 @@
+try ng-model-validate
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+
+<form ng-app="" name="myform">
+password : 
+<input type="email"name ="myemail"ng-model="text">
+<span ng-show="myform.myemail.$error.email">not valid</span>
+</form>
+
+<p>Enter your e-mail address in the input field. AngularJS will display an errormessage if the address is not an e-mail.</p>
+
+</body>
+</html>
+
+//angular binding
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myapp"ng-controller="myctrl">
+<p>{{firstname}}</p>
+</div>
+
+<script>
+
+var app=angular.module('myapp',[]);
+app.controller("myctrl",function($scope)
+{
+$scope.firstname="orbindo";
+});
+
+</script>
+
+</body>
+</html>
