@@ -1,0 +1,55 @@
+//try ng-controller
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myapp" ng-controller="myctrl">
+<p><input type="text" ng-model="firstname"></p>
+<p><input typr="text" ng-model="lastname"></p>
+<p>full name :{{firstname + "" + lastname}}</p>
+</div>
+
+<script>
+var app = angular.module("myapp",[]);
+app.controller("myctrl",function($scope){
+$scope.firstname="prabhat";
+$scope.lastname="sharma";
+});
+
+
+</script>
+
+
+</body>
+</html>
+
+//try with function
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name : {{fullname()}} 
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+    $scope.fullname = function() {
+       return $scope.firstName +  " "  + $scope.lastName;
+       };
+});
+</script>
+
+</body>
+</html>
