@@ -1,0 +1,28 @@
+//objects in angularjs
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="person={firstname:'prabhat',lastname:'sharma'}">
+<p>the answer is {{person.firstname}}</p>
+</div>
+
+</body>
+</html>
+
+//using ng-bind
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="points=[1,15,19,2,40]">
+
+<p>The third result is <span ng-bind="points[2]"></span></p>
+
+</div>
+
+</body>
+</html>
+
